@@ -1,1 +1,1 @@
-# Homework-Week-2
+# week2-rd-responsive-hw-starter

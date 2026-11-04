@@ -1,0 +1,64 @@
+/* Base styles supplied with the Responsive Design homework */
+body {
+    background-color: #dedede;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+div img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+}
+
+div {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 24%;
+    margin: 5px 0;
+    padding: 2px;
+    vertical-align: top;
+}
+
+/* At 772px and wider: show two wider columns and limit image height. */
+@media screen and (min-width: 772px) {
+    div {
+        width: 45%;
+    }
+
+    div img {
+        max-height: 30vh;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
+/* At 998px and wider: show three columns. */
+@media screen and (min-width: 998px) {
+    div {
+        width: 30%;
+    }
+}
